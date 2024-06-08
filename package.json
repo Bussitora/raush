@@ -12,7 +12,8 @@
     "photoswipe": "^5.4.4",
     "typescript": "^5.4.5",
     "vue": "^3.4.21",
-    "vue-photo-album": "^1.2.4"
+    "vue-photo-album": "^1.2.4",
+    "vue-yandex-maps": "^2.1.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.4.0",

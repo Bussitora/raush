@@ -8,7 +8,6 @@ defineProps({
 const count = ref(0)
 
 function scrollToId(e){
-  console.log(e.target.hash)
   const hash = e.target.hash.replace('#','')
   const el = document.getElementById(hash)
   if(el){
@@ -23,8 +22,10 @@ function scrollToId(e){
     <a class="menu_logo" href="#">
       <img src="/src/assets/media/logo.jpg">
     </a>
+	
     <div class="menu_in">
-      <a @click="event.preventDefault();scrollToId(event)" href="#test">test</a>
+      <a @click.prevent="scrollToId" href="#gallery">Фото</a>
+      <a @click.prevent="scrollToId" href="#map">Карта</a>
     </div>		
     <a class="menu_logo_ghost" href="#">
       <img src="/src/assets/media/logo.jpg">
