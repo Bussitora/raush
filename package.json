@@ -1,0 +1,25 @@
+{
+  "name": "raush",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "photoswipe": "^5.4.4",
+    "typescript": "^5.4.5",
+    "vue": "^3.4.21",
+    "vue-photo-album": "^1.2.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.4.0",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "eslint": "^9.4.0",
+    "eslint-plugin-vue": "^9.26.0",
+    "globals": "^15.4.0",
+    "vite": "^5.2.0"
+  }
+}
