@@ -10,6 +10,8 @@ usePhotoSwipe({ gallery: '#gallery', children: 'a' })
 </script>
 
 <template>
+<div class="block">
+  <h2>Наши фото</h2>
   <div class="view">
     <PhotoAlbum
       id="gallery"
@@ -18,11 +20,13 @@ usePhotoSwipe({ gallery: '#gallery', children: 'a' })
       :photo-renderer="CustomPhotoSwipeAdapter"
     />
   </div>
+</div>
 </template>
 
 <style scoped>
 .view {
   margin: 0 auto;  
   max-width: 1200px;
+  padding:20px 0px;
 }
 </style>

@@ -1,6 +1,8 @@
 import { createApp } from 'vue'
 import { createYmaps } from 'vue-yandex-maps'
+import './reset.css'
 import './style.css'
+import './assets/font/DINPro/fonts.css'
 import App from './App.vue'
 
 const app = createApp(App)

@@ -1,11 +1,8 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue' 
 
-defineProps({
-  msg: String,
-})
-
-const count = ref(0)
+const isScroll = ref(false)
+const isSideMenu = ref(false)
 
 function scrollToId(e){
   const hash = e.target.hash.replace('#','')
@@ -15,74 +12,171 @@ function scrollToId(e){
   }
   return false
 }
+
+function handleScroll(){
+	if (window.scrollY >= 70) {
+		isScroll.value = true
+	}
+	else{
+		isScroll.value = false
+	}	
+}
+
+function handleSideMenu(){
+	isSideMenu.value = !isSideMenu.value
+}
+
+onMounted(() => {
+	window.addEventListener('scroll', handleScroll)
+})
+   
+onUnmounted(() => {
+	window.value.removeEventListener(handleScroll)
+}) 
+
 </script>
 
 <template>
-  <div class="menu" id="menu">
-    <a class="menu_logo" href="#">
-      <img src="/src/assets/media/logo.jpg">
-    </a>
-	
-    <div class="menu_in">
-      <a @click.prevent="scrollToId" href="#gallery">Фото</a>
-      <a @click.prevent="scrollToId" href="#map">Карта</a>
-    </div>		
-    <a class="menu_logo_ghost" href="#">
-      <img src="/src/assets/media/logo.jpg">
-    </a>			
+  <div v-bind:class="{ scroll: isScroll }" class="header">
+	<div class="header_in">
+		<a class="menu_logo" href="#">
+			<img src="/src/assets/media/logo.jpg">
+		</a>
+		<div v-bind:class="{ act: isSideMenu }" class="shadow"></div>
+		<div v-bind:class="{ act: isSideMenu }" class="menu">
+			<div @click="handleSideMenu" class="close"></div>
+			<a @click.prevent="scrollToId" href="#gallery">Фото</a>
+			<a @click.prevent="scrollToId" href="#map">Карта</a>
+		</div>
+		<div @click="handleSideMenu" class="menu_b"></div>
+	</div>		
   </div>	
 </template>
 
 <style scoped>
-.menu{
+.header{
 	display: flex;
 	width:100%;
 	left:0;
 	top:0;
 	position:fixed;
 	z-index:101;
-	padding:10px 10vw;
-}
-
-.menu_in{
-	display:flex;	
-	width:100%;
-	/*flex-wrap:wrap;*/
-	justify-content:center;
-}
-
-.menu_in a{
-	font-size:18px;
-	margin:15px;
+	background:none;
+	height:70px;	
 	transition:0.2s;
 }
 
+.header.scroll{
+	background:#fff;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+.header_in{
+	max-width:1200px;
+	margin:0 auto;
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content: space-between;
+}
+
+.menu{
+	display:flex;	
+	width:100%;
+	margin-left:30px;
+	align-items: center;
+}
+
+.menu a{
+	font-size:20px;
+	margin:0px 15px;
+	transition:0.2s;
+	color:#000;
+	font-weight:600;
+	text-decoration: none;
+}
+
+.menu a{
+	text-decoration: none;
+	color:#000;
+}
+
 .menu_logo{
-	max-width:100px;
+	max-width:70px;
 	display: flex;
     align-items: center;
 }
 
-.menu_logo img{
-	pointer-events:none;
+.menu_b{
+	width:40px;
+	height:40px;
+	background:url(../assets/media/menu.svg) center center no-repeat;
+	background-size:contain;
+	display:none;
 }
 
-.menu_logo_ghost{
-	max-width:100px;
-	display: flex;
-    align-items: center;
-	visibility:hidden;
-	opacity:0;
-	pointer-events:none;
+.close{
+	display:none;
+}
+
+.shadow{
+	display:none;
 }
 
 @media (min-width:0px) and (max-width:640px){
-	.menu_logo_ghost{
-		display:none;
+	.menu_b{
+		display:block;
 	}
-  .menu{
-	  flex-direction: column;
-		align-items: center;
+  	.menu{
+		position:fixed;
+		right:-360px;
+		top:0;
+		width:100%;
+		max-width:360px;
+		height:100%;
+		flex-direction: column;
+		align-items: flex-start;
+		transition:0.2s;
+		background:#fff;
+		padding-top:70px;
+	}
+	.menu.act{
+		right:0;
+	}
+	.menu a{
+		font-size:20px;
+		margin:15px 15px;
+		transition:0.2s;
+		color:#000;
+		font-weight:600;
+		text-decoration: none;
+	}
+	.close{
+		width:30px;
+		height:30px;
+		background:url(../assets/media/close.svg) center center no-repeat;
+		background-size:contain;
+		position:absolute;
+		right:10px;
+		top:10px;
+		cursor:pointer;
+		display: block;
+	}
+	.shadow{
+		display:block;
+		position:fixed;
+		left:0;
+		top:0;
+		width:100%;
+		height:100%;
+		background:rgba(0,0,0,0.5);
+		visibility:hidden;
+		opacity:0;
+		transition:0.2s;
+	}
+	.shadow.act{
+		visibility:visible;
+		opacity:1;
 	}
 }
 </style>

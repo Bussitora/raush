@@ -1,4 +1,7 @@
 <template>
+<div class="block">
+  <h2>Как добраться</h2>
+  <div class="map_in">
     <yandex-map
         v-model="map"
         :settings="{
@@ -13,14 +16,21 @@
     >
       <yandex-map-default-scheme-layer/>
     </yandex-map>
-  </template>
+  </div>
+</div>
+</template>
   
-  <script setup lang="ts">
-  import { shallowRef } from 'vue';
-  import type { YMap } from '@yandex/ymaps3-types';
-  import { YandexMap, YandexMapDefaultSchemeLayer } from 'vue-yandex-maps';
-  
-  //Можно использовать для различных преобразований
-  const map = shallowRef<null | YMap>(null);
-  </script>
+<script setup lang="ts">
+import { shallowRef } from 'vue';
+import type { YMap } from '@yandex/ymaps3-types';
+import { YandexMap, YandexMapDefaultSchemeLayer } from 'vue-yandex-maps';
 
+//Можно использовать для различных преобразований
+const map = shallowRef<null | YMap>(null);
+</script>
+
+<style scoped>
+  .map_in{
+    margin-top:30px;
+  }
+</style>
