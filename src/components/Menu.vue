@@ -60,10 +60,11 @@ onUnmounted(() => {
 	left:0;
 	top:0;
 	position:fixed;
-	z-index:101;
+	z-index:1002;
 	background:none;
 	height:70px;	
 	transition:0.2s;
+	pointer-events: none;
 }
 
 .header.scroll{
@@ -91,13 +92,22 @@ onUnmounted(() => {
 	font-size:20px;
 	margin:0px 15px;
 	transition:0.2s;
-	color:#000;
+	color:#fff;
 	font-weight:600;
 	text-decoration: none;
+	pointer-events: all;
 }
 
-.menu a{
+.menu a:hover{
 	text-decoration: none;
+	color:#fff;
+}
+
+.scroll .menu a{
+	color:#000;
+}
+
+.scroll .menu a:hover{
 	color:#000;
 }
 
@@ -105,18 +115,26 @@ onUnmounted(() => {
 	max-width:70px;
 	display: flex;
     align-items: center;
+	pointer-events: all;
+	cursor:pointer;
 }
 
 .menu_b{
 	width:40px;
 	height:40px;
-	background:url(../assets/media/menu.svg) center center no-repeat;
+	background:url(../assets/media/menu_w.svg) center center no-repeat;
 	background-size:contain;
 	display:none;
+	pointer-events: all;
+}
+
+.scroll .menu_b{
+	background:url(../assets/media/menu.svg) center center no-repeat;
 }
 
 .close{
 	display:none;
+	pointer-events: all;
 }
 
 .shadow{
