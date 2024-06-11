@@ -11,7 +11,7 @@ usePhotoSwipe({ gallery: '#gallery', children: 'a' })
 
 <template>
 <div class="block">
-  <h2>Наши фото</h2>
+  <h2>Фото галерея</h2>
   <div class="view">
     <PhotoAlbum
       id="gallery"
@@ -26,7 +26,7 @@ usePhotoSwipe({ gallery: '#gallery', children: 'a' })
 <style scoped>
 .view {
   margin: 0 auto;  
-  max-width: 1200px;
+  max-width: 1280px;
   padding:20px 0px;
 }
 </style>

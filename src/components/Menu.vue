@@ -46,7 +46,7 @@ onUnmounted(() => {
 		<div v-bind:class="{ act: isSideMenu }" class="menu">
 			<div @click="handleSideMenu" class="close"></div>
 			<a @click.prevent="scrollToId" href="#gallery">Фото</a>
-			<a @click.prevent="scrollToId" href="#map">Карта</a>
+			<a @click.prevent="scrollToId" href="#map">Контакты</a>
 		</div>
 		<div @click="handleSideMenu" class="menu_b"></div>
 	</div>		
