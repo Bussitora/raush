@@ -193,7 +193,7 @@ window.addEventListener('load', function () {
 
 <template>
 <div id="main" class="block main">
-  <h1>Арт-студия "Катя Рауш"</h1>
+  <h1>Арт-студия «Катя Рауш»</h1>
   <a class="main_button" target="_blank" href="https://vk.com/im?media=&sel=-206958613">записаться</a>
   <canvas id="main_canvas" ></canvas>
 </div>
