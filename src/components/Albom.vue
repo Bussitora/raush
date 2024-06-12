@@ -10,7 +10,7 @@ usePhotoSwipe({ gallery: '#gallery', children: 'a' })
 </script>
 
 <template>
-<div class="block">
+<div class="block block_text">
   <h2>Фото галерея</h2>
   <div class="view">
     <PhotoAlbum

@@ -5,12 +5,13 @@ const isScroll = ref(false)
 const isSideMenu = ref(false)
 
 function scrollToId(e){
-  const hash = e.target.hash.replace('#','')
-  const el = document.getElementById(hash)
-  if(el){
-    el.scrollIntoView({alignToTop:false,behavior: 'smooth'})
-  }
-  return false
+	isSideMenu.value = false
+	const hash = e.target.hash.replace('#','')
+	const el = document.getElementById(hash)
+	if(el){
+		el.scrollIntoView({behavior: 'smooth'})
+	}
+	return false
 }
 
 function handleScroll(){
@@ -45,9 +46,14 @@ onUnmounted(() => {
 		<div v-bind:class="{ act: isSideMenu }" class="shadow"></div>
 		<div v-bind:class="{ act: isSideMenu }" class="menu">
 			<div @click="handleSideMenu" class="close"></div>
-			<a @click.prevent="scrollToId" href="#gallery">Фото</a>
+			<a @click.prevent="scrollToId" href="#about">Об арт-студии</a>
+			<a @click.prevent="scrollToId" href="#children">Для детей</a>
+			<a @click.prevent="scrollToId" href="#old">Для взрослых</a>
+			<a @click.prevent="scrollToId" href="#gallery">Фото галерея</a>
 			<a @click.prevent="scrollToId" href="#map">Контакты</a>
+			<a class="vk" href="https://vk.com/artstudio_raush"></a>
 		</div>
+		<a class="vk" href="https://vk.com/artstudio_raush"></a>
 		<div @click="handleSideMenu" class="menu_b"></div>
 	</div>		
   </div>	
@@ -73,7 +79,8 @@ onUnmounted(() => {
 }
 
 .header_in{
-	max-width:1200px;
+	max-width:1280px;
+	padding:0px 20px;
 	margin:0 auto;
 	width:100%;
 	display:flex;
@@ -83,7 +90,6 @@ onUnmounted(() => {
 
 .menu{
 	display:flex;	
-	width:100%;
 	margin-left:30px;
 	align-items: center;
 }
@@ -141,6 +147,19 @@ onUnmounted(() => {
 	display:none;
 }
 
+.vk{
+	flex:0 0 auto;
+	width:50px;
+	height:50px;
+	background:url(../assets/media/vk.svg) center center no-repeat;
+	background-size: cover;
+	pointer-events:all;
+}
+
+.menu .vk{
+	display:none;
+}
+
 @media (min-width:0px) and (max-width:640px){
 	.menu_b{
 		display:block;
@@ -150,7 +169,7 @@ onUnmounted(() => {
 		right:-360px;
 		top:0;
 		width:100%;
-		max-width:360px;
+		max-width:300px;
 		height:100%;
 		flex-direction: column;
 		align-items: flex-start;
@@ -195,6 +214,12 @@ onUnmounted(() => {
 	.shadow.act{
 		visibility:visible;
 		opacity:1;
+	}
+	.vk{
+		display:none;
+	}
+	.menu .vk{
+		display:block;
 	}
 }
 </style>
