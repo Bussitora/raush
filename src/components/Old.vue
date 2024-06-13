@@ -9,22 +9,46 @@ import { ref } from 'vue'
       <div class="service_block_title">Для взрослых</div>
       <div class="service_block_els">
         <div class="service_block_el">
-          <div class="service_block_el_title">Живопись на холстах</div>
+          <div class="service_block_el_in">
+            <div style="background-image:url('src/assets/photo/photo_5411128201746440718_y.jpg')" class="service_block_el_bg"></div>
+            <div class="service_block_el_shadow"></div>
+            <div class="service_block_el_title">Живопись на холстах</div>
+          </div>
         </div>
         <div class="service_block_el">
-          <div class="service_block_el_title">Арт-вечеринки</div>
+          <div class="service_block_el_in">
+            <div style="background-image:url('src/assets/photo/photo_5411128201746440720_y.jpg')" class="service_block_el_bg"></div>
+            <div class="service_block_el_shadow"></div>
+            <div class="service_block_el_title">Арт-вечеринки</div>
+          </div>
         </div>
         <div class="service_block_el">
-          <div class="service_block_el_title">Дни рождения</div>
+          <div class="service_block_el_in">
+            <div style="background-image:url('src/assets/photo/photo_5411128201746440723_y.jpg')" class="service_block_el_bg"></div>
+            <div class="service_block_el_shadow"></div>
+            <div class="service_block_el_title">Дни рождения</div>
+          </div>
         </div>
         <div class="service_block_el">
-          <div class="service_block_el_title">Эпоксидная смола</div>
+          <div class="service_block_el_in">
+            <div style="background-image:url('src/assets/photo/photo_5411128201746440768_y.jpg')" class="service_block_el_bg"></div>
+            <div class="service_block_el_shadow"></div>
+            <div class="service_block_el_title">Эпоксидная смола</div>
+          </div>
         </div>
         <div class="service_block_el">
-          <div class="service_block_el_title">Арт-свидания</div>
+          <div class="service_block_el_in">
+            <div style="background-image:url('src/assets/photo/photo_5411128201746440781_y.jpg')" class="service_block_el_bg"></div>
+            <div class="service_block_el_shadow"></div>
+            <div class="service_block_el_title">Арт-свидания</div>
+          </div>
         </div>
         <div class="service_block_el">
-          <div class="service_block_el_title">Корпоративы</div>
+          <div class="service_block_el_in">
+            <div style="background-image:url('src/assets/photo/photo_5411128201746440792_y.jpg')" class="service_block_el_bg"></div>
+            <div class="service_block_el_shadow"></div>
+            <div class="service_block_el_title">Корпоративы</div>
+          </div>
         </div>
       </div>
     </div>
@@ -41,27 +65,55 @@ import { ref } from 'vue'
 .service_block_els{
   display:flex;
   flex-wrap: wrap;
+  margin:0 -10px;
 }
 .service_block_el{
   width:33.33%;
+  padding:10px;
   height:300px;
   display:flex;
-  justify-content: center;
-  align-items: center;
-  align-items: center; 
+  flex-direction: column;
+  justify-content: flex-end;
+  position:relative;
+}
+
+.service_block_el_in{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position:relative;
+}
+
+.service_block_el_bg{
+  position:absolute;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:cover;
+}
+
+.service_block_el_shadow{
+  position:absolute;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  background:rgba(0,0,0,0.7);
+  display:none;
 }
 
 .service_block_el_title{
   color:#fff;
   font-size:20px;
-  font-weight:bold
-}
-
-.service_block_el:nth-child(even){
-  background:red;
-}
-
-.service_block_el:nth-child(odd){
-  background:blue;
+  font-weight:bold;
+  position:relative;
+  background:rgba(229, 68, 138,0.9);
+  padding:30px 10px;
+  text-align:center;
 }
 </style>
