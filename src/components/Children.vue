@@ -124,10 +124,6 @@ AOS.init({ once: true})
   position:relative;
 }
 
-.service_block_el_bg{
-
-}
-
 .service_block_el_shadow{
   position:absolute;
   left:0;
