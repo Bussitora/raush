@@ -25,8 +25,8 @@ usePhotoSwipe({ gallery: '#gallery', children: 'a' })
 
 <style scoped>
 .view {
-  margin: 0 auto;  
+  margin: 40px auto 0;  
   max-width: 1280px;
-  padding:20px 0px;
+  padding: 0px;
 }
 </style>

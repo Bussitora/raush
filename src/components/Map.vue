@@ -24,7 +24,7 @@ const map = shallowRef<null | YMap>(null)
     <div class="contacts">
       <div 
           data-aos="fade-right"
-          data-aos-offset="400"
+          data-aos-offset="200"
           class="contact">
         <div class="contact_pic"><img src="../assets/media/contact_1.svg"></div>
         <div class="contact_title">Телефон</div>
@@ -32,7 +32,7 @@ const map = shallowRef<null | YMap>(null)
       </div>
       <div
         data-aos="fade-down"
-        data-aos-offset="400"
+        data-aos-offset="200"
         class="contact">
         <div class="contact_pic"><img src="../assets/media/contact_2.svg"></div>
         <div class="contact_title">Адрес</div>
@@ -40,7 +40,7 @@ const map = shallowRef<null | YMap>(null)
       </div>
       <div
         data-aos="fade-left"
-        data-aos-offset="400"
+        data-aos-offset="200"
         class="contact">
         <div class="contact_pic"><img src="../assets/media/contact_3.svg"></div>
         <div class="contact_title">Транспорт</div>

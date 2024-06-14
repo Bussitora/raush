@@ -17,7 +17,9 @@ AOS.init({ once: true})
           data-aos-delay="200"
           class="service_block_el">
           <div class="service_block_el_in">
-            <div style="background-image:url('src/assets/photo/photo_5411128201746440718_y.jpg')" class="service_block_el_bg"></div>
+            <div class="service_block_el_bg">
+              <img src="../assets/service/photo_5434149870698095562_y.jpg">
+            </div>
             <div class="service_block_el_shadow"></div>
             <div class="service_block_el_title">Живопись на холстах</div>
           </div>
@@ -28,7 +30,9 @@ AOS.init({ once: true})
           data-aos-delay="200"
           class="service_block_el">
           <div class="service_block_el_in">
-            <div style="background-image:url('src/assets/photo/photo_5411128201746440720_y.jpg')" class="service_block_el_bg"></div>
+            <div class="service_block_el_bg">
+              <img src="../assets/service/photo_5434149870698095560_y.jpg">
+            </div>
             <div class="service_block_el_shadow"></div>
             <div class="service_block_el_title">Арт-вечеринки</div>
           </div>
@@ -39,31 +43,11 @@ AOS.init({ once: true})
           data-aos-delay="200"
           class="service_block_el">
           <div class="service_block_el_in">
-            <div style="background-image:url('src/assets/photo/photo_5411128201746440723_y.jpg')" class="service_block_el_bg"></div>
+            <div class="service_block_el_bg">
+              <img src="../assets/service/photo_5434149870698095561_y.jpg">
+            </div>
             <div class="service_block_el_shadow"></div>
             <div class="service_block_el_title">Дни рождения</div>
-          </div>
-        </div>
-        <div
-          data-aos="flip-left"
-          data-aos-offset="300"
-          data-aos-delay="200"
-          class="service_block_el">
-          <div class="service_block_el_in">
-            <div style="background-image:url('src/assets/photo/photo_5411128201746440768_y.jpg')" class="service_block_el_bg"></div>
-            <div class="service_block_el_shadow"></div>
-            <div class="service_block_el_title">Эпоксидная смола</div>
-          </div>
-        </div>
-        <div
-          data-aos="flip-up"
-          data-aos-offset="300"
-          data-aos-delay="200"
-          class="service_block_el">
-          <div class="service_block_el_in">
-            <div style="background-image:url('src/assets/photo/photo_5411128201746440781_y.jpg')" class="service_block_el_bg"></div>
-            <div class="service_block_el_shadow"></div>
-            <div class="service_block_el_title">Арт-свидания</div>
           </div>
         </div>
         <div 
@@ -72,9 +56,37 @@ AOS.init({ once: true})
           data-aos-delay="200"
           class="service_block_el">
           <div class="service_block_el_in">
-            <div style="background-image:url('src/assets/photo/photo_5411128201746440792_y.jpg')" class="service_block_el_bg"></div>
+            <div class="service_block_el_bg">
+              <img src="../assets/service/photo_5434149870698095573_y.jpg">
+            </div>
             <div class="service_block_el_shadow"></div>
             <div class="service_block_el_title">Корпоративы</div>
+          </div>
+        </div>
+        <div
+          data-aos="flip-up"
+          data-aos-offset="300"
+          data-aos-delay="200"
+          class="service_block_el">
+          <div class="service_block_el_in">
+            <div class="service_block_el_bg">
+              <img src="../assets/service/photo_5434149870698095563_y.jpg">
+            </div>
+            <div class="service_block_el_shadow"></div>
+            <div class="service_block_el_title">Арт-свидания</div>
+          </div>
+        </div>
+        <div
+          data-aos="flip-left"
+          data-aos-offset="300"
+          data-aos-delay="200"
+          class="service_block_el">
+          <div class="service_block_el_in">
+            <div class="service_block_el_bg">
+              <img src="../assets/service/photo_5434149870698095564_y.jpg">
+            </div>
+            <div class="service_block_el_shadow"></div>
+            <div class="service_block_el_title">Эпоксидная смола</div>
           </div>
         </div>
       </div>
@@ -97,7 +109,6 @@ AOS.init({ once: true})
 .service_block_el{
   width:33.33%;
   padding:10px;
-  height:300px;
   display:flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -114,14 +125,7 @@ AOS.init({ once: true})
 }
 
 .service_block_el_bg{
-  position:absolute;
-  left:0;
-  top:0;
-  right:0;
-  bottom:0;
-  background-repeat:no-repeat;
-  background-position:center center;
-  background-size:cover;
+
 }
 
 .service_block_el_shadow{
@@ -130,7 +134,7 @@ AOS.init({ once: true})
   top:0;
   right:0;
   bottom:0;
-  background:rgba(0,0,0,0.7);
+  background:rgba(0,0,0,0.4);
   display:none;
 }
 
@@ -138,9 +142,12 @@ AOS.init({ once: true})
   color:#fff;
   font-size:20px;
   font-weight:bold;
-  position:relative;
+  position:absolute;
   background:rgba(229, 68, 138,0.9);
-  padding:30px 10px;
+  padding:20px 10px;
   text-align:center;
+  bottom:0;
+  right:0;
+  left:0;
 }
 </style>

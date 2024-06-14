@@ -212,6 +212,7 @@ window.addEventListener('load', function () {
   color:#fff;
   position:relative;
 }
+
 #main_canvas{
   position:absolute;
   left:0;
@@ -219,17 +220,19 @@ window.addEventListener('load', function () {
   bottom:0;
   right:0;
 }
+
 .main h1{
   position:relative;
   z-index:1001;
   pointer-events: none;
 }
+
 .main_button{
   text-decoration: none;
   color:#fff;
   position:relative;
   z-index:1001;
-  margin-top:40px;
+  margin-top:50px;
   background-color: #e5448a;
   padding:15px 40px;
   border-radius:4px;
