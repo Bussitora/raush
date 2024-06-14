@@ -1,19 +1,47 @@
+<script setup lang="ts">
+import { shallowRef } from 'vue'
+import type { YMap, LngLat } from '@yandex/ymaps3-types'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+AOS.init({ once: true})
+import {
+  YandexMap,
+  YandexMapControls,
+  YandexMapDefaultFeaturesLayer,
+  YandexMapDefaultMarker,
+  YandexMapDefaultSchemeLayer,
+  YandexMapZoomControl,
+} from 'vue-yandex-maps'
+
+const map = shallowRef<null | YMap>(null)
+
+</script>
+
 <template>
 <div class="block">
   <div class="block_text">
     <h2>Как добраться и связаться с нами</h2>
     <div class="contacts">
-      <div class="contact">
+      <div 
+          data-aos="fade-right"
+          data-aos-offset="400"
+          class="contact">
         <div class="contact_pic"><img src="../assets/media/contact_1.svg"></div>
         <div class="contact_title">Телефон</div>
         <div class="contact_text">+7 (982) 667-00-06</div>
       </div>
-      <div class="contact">
+      <div
+        data-aos="fade-down"
+        data-aos-offset="400"
+        class="contact">
         <div class="contact_pic"><img src="../assets/media/contact_2.svg"></div>
         <div class="contact_title">Адрес</div>
         <div class="contact_text"> г. Нижний Тагил, Черноисточинское шоссе 26/1</div>
       </div>
-      <div class="contact">
+      <div
+        data-aos="fade-left"
+        data-aos-offset="400"
+        class="contact">
         <div class="contact_pic"><img src="../assets/media/contact_3.svg"></div>
         <div class="contact_title">Транспорт</div>
         <div class="contact_text">Остановка "Глобус"</div>
@@ -43,22 +71,6 @@
   </div>
 </div>
 </template>
-  
-<script setup lang="ts">
-import { shallowRef } from 'vue'
-import type { YMap, LngLat } from '@yandex/ymaps3-types'
-import {
-  YandexMap,
-  YandexMapControls,
-  YandexMapDefaultFeaturesLayer,
-  YandexMapDefaultMarker,
-  YandexMapDefaultSchemeLayer,
-  YandexMapZoomControl,
-} from 'vue-yandex-maps'
-
-const map = shallowRef<null | YMap>(null)
-
-</script>
 
 <style scoped>
   .map_in{

@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "photoswipe": "^5.4.4",
     "typescript": "^5.4.5",
     "vue": "^3.4.21",

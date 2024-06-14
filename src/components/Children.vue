@@ -1,5 +1,8 @@
 <script setup>
 import { ref } from 'vue'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+AOS.init({ once: true})
 </script>
 
 <template>
@@ -8,42 +11,66 @@ import { ref } from 'vue'
     <div class="service_block">
       <div class="service_block_title">Для детей</div>
       <div class="service_block_els">
-        <div class="service_block_el">
+        <div
+          data-aos="fade-right"
+          data-aos-offset="300"   
+          data-aos-delay="200"
+          class="service_block_el">
           <div class="service_block_el_in">
             <div style="background-image:url('src/assets/photo/IMG_3693.PNG')" class="service_block_el_bg"></div>
             <div class="service_block_el_shadow"></div>
             <div class="service_block_el_title">ИЗО + лепка</div>
           </div>
         </div>
-        <div class="service_block_el">
+        <div 
+          data-aos="fade-down"
+          data-aos-offset="300"
+          data-aos-delay="200"
+          class="service_block_el">
           <div class="service_block_el_in">
             <div style="background-image:url('src/assets/photo/IMG_3704.PNG')" class="service_block_el_bg"></div>
             <div class="service_block_el_shadow"></div>
             <div class="service_block_el_title">Скетчинг</div>
           </div>
         </div>
-        <div class="service_block_el">
+        <div 
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-delay="200"
+          class="service_block_el">
           <div class="service_block_el_in">
             <div style="background-image:url('src/assets/photo/IMG_3706.PNG')" class="service_block_el_bg"></div>
             <div class="service_block_el_shadow"></div>
             <div class="service_block_el_title">Живопись на холстах</div> 
           </div>        
         </div>
-        <div class="service_block_el">
+        <div
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-delay="200"
+          class="service_block_el">
           <div class="service_block_el_in">
             <div style="background-image:url('src/assets/photo/IMG_3714.PNG')" class="service_block_el_bg"></div>
             <div class="service_block_el_shadow"></div>
             <div class="service_block_el_title">Дни рождения</div>
           </div>
         </div>
-        <div class="service_block_el">
+        <div
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-delay="200"
+          class="service_block_el">
           <div class="service_block_el_in">
             <div style="background-image:url('src/assets/photo/IMG_3717.PNG')" class="service_block_el_bg"></div>
             <div class="service_block_el_shadow"></div>
             <div class="service_block_el_title">Летний арт-лагерь</div>
           </div>      
         </div>
-        <div class="service_block_el">
+        <div 
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-delay="200"
+          class="service_block_el">
           <div class="service_block_el_in">
             <div style="background-image:url('src/assets/photo/IMG_3714.PNG')" class="service_block_el_bg"></div>
             <div class="service_block_el_shadow"></div>          

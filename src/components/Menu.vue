@@ -40,7 +40,7 @@ onUnmounted(() => {
 <template>
   <div v-bind:class="{ scroll: isScroll }" class="header">
 	<div class="header_in">
-		<a class="menu_logo" href="#">
+		<a class="menu_logo" href="/">
 			<img src="/src/assets/media/logo.jpg">
 		</a>
 		<div v-bind:class="{ act: isSideMenu }" class="shadow"></div>

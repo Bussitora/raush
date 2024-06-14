@@ -1,5 +1,8 @@
 <script setup>
 import { ref } from 'vue'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+AOS.init({ once: true})
 </script>
 
 <template>
@@ -8,42 +11,66 @@ import { ref } from 'vue'
     <div class="service_block">
       <div class="service_block_title">Для взрослых</div>
       <div class="service_block_els">
-        <div class="service_block_el">
+        <div
+          data-aos="flip-left"
+          data-aos-offset="300"
+          data-aos-delay="200"
+          class="service_block_el">
           <div class="service_block_el_in">
             <div style="background-image:url('src/assets/photo/photo_5411128201746440718_y.jpg')" class="service_block_el_bg"></div>
             <div class="service_block_el_shadow"></div>
             <div class="service_block_el_title">Живопись на холстах</div>
           </div>
         </div>
-        <div class="service_block_el">
+        <div 
+          data-aos="flip-down"
+          data-aos-offset="300"
+          data-aos-delay="200"
+          class="service_block_el">
           <div class="service_block_el_in">
             <div style="background-image:url('src/assets/photo/photo_5411128201746440720_y.jpg')" class="service_block_el_bg"></div>
             <div class="service_block_el_shadow"></div>
             <div class="service_block_el_title">Арт-вечеринки</div>
           </div>
         </div>
-        <div class="service_block_el">
+        <div
+          data-aos="flip-right"
+          data-aos-offset="300"
+          data-aos-delay="200"
+          class="service_block_el">
           <div class="service_block_el_in">
             <div style="background-image:url('src/assets/photo/photo_5411128201746440723_y.jpg')" class="service_block_el_bg"></div>
             <div class="service_block_el_shadow"></div>
             <div class="service_block_el_title">Дни рождения</div>
           </div>
         </div>
-        <div class="service_block_el">
+        <div
+          data-aos="flip-left"
+          data-aos-offset="300"
+          data-aos-delay="200"
+          class="service_block_el">
           <div class="service_block_el_in">
             <div style="background-image:url('src/assets/photo/photo_5411128201746440768_y.jpg')" class="service_block_el_bg"></div>
             <div class="service_block_el_shadow"></div>
             <div class="service_block_el_title">Эпоксидная смола</div>
           </div>
         </div>
-        <div class="service_block_el">
+        <div
+          data-aos="flip-up"
+          data-aos-offset="300"
+          data-aos-delay="200"
+          class="service_block_el">
           <div class="service_block_el_in">
             <div style="background-image:url('src/assets/photo/photo_5411128201746440781_y.jpg')" class="service_block_el_bg"></div>
             <div class="service_block_el_shadow"></div>
             <div class="service_block_el_title">Арт-свидания</div>
           </div>
         </div>
-        <div class="service_block_el">
+        <div 
+          data-aos="flip-right"
+          data-aos-offset="300"
+          data-aos-delay="200"
+          class="service_block_el">
           <div class="service_block_el_in">
             <div style="background-image:url('src/assets/photo/photo_5411128201746440792_y.jpg')" class="service_block_el_bg"></div>
             <div class="service_block_el_shadow"></div>
