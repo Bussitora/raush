@@ -160,7 +160,7 @@ onUnmounted(() => {
 	display:none;
 }
 
-@media (min-width:0px) and (max-width:640px){
+@media (min-width:0px) and (max-width:1000px){
 	.menu_b{
 		display:block;
 	}

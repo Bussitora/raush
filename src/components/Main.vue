@@ -245,4 +245,8 @@ window.addEventListener('load', function () {
   background-color:#e61e53;
 }
 
+@media (min-width:0px) and (max-width:1000px){
+
+}
+
 </style>

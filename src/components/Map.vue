@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { shallowRef } from 'vue'
-import type { YMap, LngLat } from '@yandex/ymaps3-types'
+import type { YMap, LngLat, BehaviorType } from '@yandex/ymaps3-types'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 AOS.init({ once: true})
@@ -13,6 +13,7 @@ import {
   YandexMapZoomControl,
 } from 'vue-yandex-maps'
 
+const BEHAVIOR: BehaviorType[] = ['drag', 'dblClick', 'pinchZoom']
 const map = shallowRef<null | YMap>(null)
 
 </script>
@@ -56,6 +57,7 @@ const map = shallowRef<null | YMap>(null)
             center: [59.939345, 57.896148],
             zoom: 18,
           },
+          behaviors: BEHAVIOR
         }"
         width="100%"
         height="600px"

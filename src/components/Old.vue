@@ -9,7 +9,9 @@ AOS.init({ once: true})
 <div id="old" class="block block_text">
   <div class="service">
     <div class="service_block">
-      <div class="service_block_title">Для взрослых</div>
+      <div class="service_block_title">
+        <h2>Для взрослых</h2>
+      </div>
       <div class="service_block_els">
         <div
           data-aos="flip-left"
@@ -97,8 +99,6 @@ AOS.init({ once: true})
 
 <style scoped>
 .service_block_title{
-  font-size:36px;
-  font-weight:600;
   margin-bottom:30px;
 }
 .service_block_els{
