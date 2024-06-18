@@ -100,6 +100,10 @@ a:hover{
   color:#e61e53;
 }
 
+.nowrap{
+  font-size:inherit;
+  white-space: nowrap;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
