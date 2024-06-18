@@ -211,6 +211,7 @@ window.addEventListener('load', function () {
   background-size:cover;
   color:#fff;
   position:relative;
+  padding:10px;
 }
 
 #main_canvas{

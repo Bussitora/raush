@@ -146,4 +146,16 @@ AOS.init({ once: true})
   right:0;
   left:0;
 }
+
+@media (min-width:641px) and (max-width:1000px){
+  .service_block_el{
+    width:50%;
+  }
+}
+
+@media (min-width:0px) and (max-width:640px){
+  .service_block_el{
+    width:100%;
+  }
+}
 </style>

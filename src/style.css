@@ -91,25 +91,39 @@ button:focus-visible {
   margin-right:auto;
 }
 
+a{
+  color:#e5448a;
+  transition:0.2s;
+}
+
+a:hover{
+  color:#e61e53;
+}
+
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
 
-@media (min-width:0px) and (max-width:1000px){
+@media (min-width:641px) and (max-width:1000px){
   h1 {
     font-size: 2.2em;
   }
   
   h2 {
     font-size: 1.6em;
+  }
+}
+  
+  @media (min-width:0px) and (max-width:640px){
+  h1 {
+    font-size: 2em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
   }
 }
