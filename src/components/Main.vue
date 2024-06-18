@@ -195,6 +195,7 @@ window.addEventListener('load', function () {
 <div id="main" class="block main">
   <h1>Арт-студия <span class="nowrap">«Катя Рауш»</span></h1>
   <a class="main_button" target="_blank" href="https://vk.com/im?media=&sel=-206958613">записаться</a>
+  <div class="shadow"></div>
   <canvas id="main_canvas" ></canvas>
 </div>
 </template>
@@ -246,8 +247,23 @@ window.addEventListener('load', function () {
   background-color:#e61e53;
 }
 
-@media (min-width:0px) and (max-width:1000px){
+.shadow{
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  right:0;
+  display:none;
+  background: rgba(0, 0, 0, 0.3);
+}
 
+@media (min-width:0px) and (max-width:640px){
+  #main_canvas{
+    display:none;
+  }
+  .shadow{
+    display:block;
+  }
 }
 
 </style>
