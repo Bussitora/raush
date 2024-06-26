@@ -14,6 +14,19 @@ AOS.init({ once: true})
       </div>
       <div class="service_block_els">
         <div
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="200"
+          class="service_block_el">
+          <div class="service_block_el_in">
+            <div class="service_block_el_bg">
+              <img src="../assets/service/photo_5434149870698095558_y.jpg">
+            </div>
+            <div class="service_block_el_shadow"></div>
+            <div class="service_block_el_title">Летний арт-лагерь</div>
+          </div>      
+        </div>
+        <div
           data-aos="fade-right"
           data-aos-offset="200"   
           data-aos-delay="200"
@@ -64,19 +77,6 @@ AOS.init({ once: true})
             <div class="service_block_el_shadow"></div>
             <div class="service_block_el_title">Дни рождения</div>
           </div>
-        </div>
-        <div
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-delay="200"
-          class="service_block_el">
-          <div class="service_block_el_in">
-            <div class="service_block_el_bg">
-              <img src="../assets/service/photo_5434149870698095558_y.jpg">
-            </div>
-            <div class="service_block_el_shadow"></div>
-            <div class="service_block_el_title">Летний арт-лагерь</div>
-          </div>      
         </div>
         <div 
           data-aos="fade-left"
