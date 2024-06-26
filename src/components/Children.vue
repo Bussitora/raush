@@ -14,7 +14,7 @@ AOS.init({ once: true})
       </div>
       <div class="service_block_els">
         <div
-          data-aos="fade-up"
+          data-aos="fade-right"
           data-aos-offset="200"
           data-aos-delay="200"
           class="service_block_el">
@@ -27,7 +27,7 @@ AOS.init({ once: true})
           </div>      
         </div>
         <div
-          data-aos="fade-right"
+          data-aos="fade-down"
           data-aos-offset="200"   
           data-aos-delay="200"
           class="service_block_el">
@@ -40,7 +40,7 @@ AOS.init({ once: true})
           </div>
         </div>
         <div 
-          data-aos="fade-down"
+          data-aos="fade-left"
           data-aos-offset="200"
           data-aos-delay="200"
           class="service_block_el">
@@ -53,7 +53,7 @@ AOS.init({ once: true})
           </div>
         </div>
         <div 
-          data-aos="fade-left"
+          data-aos="fade-right"
           data-aos-offset="200"
           data-aos-delay="200"
           class="service_block_el">
@@ -66,7 +66,7 @@ AOS.init({ once: true})
           </div>        
         </div>
         <div
-          data-aos="fade-right"
+          data-aos="fade-up"
           data-aos-offset="200"
           data-aos-delay="200"
           class="service_block_el">
