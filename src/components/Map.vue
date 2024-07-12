@@ -37,7 +37,7 @@ const map = shallowRef<null | YMap>(null)
         class="contact">
         <div class="contact_pic"><img src="../assets/media/contact_2.svg"></div>
         <div class="contact_title">Адрес</div>
-        <div class="contact_text"> г. Нижний Тагил, Черноисточинское шоссе 26/1</div>
+        <div class="contact_text"> г. Нижний Тагил, Уральский проспект 91</div>
       </div>
       <div
         data-aos="fade-left"
@@ -54,7 +54,7 @@ const map = shallowRef<null | YMap>(null)
         v-model="map"
         :settings="{
           location: {
-            center: [59.939345, 57.896148],
+            center: [59.958674, 57.867349],
             zoom: 18,
           },
           behaviors: BEHAVIOR
@@ -68,7 +68,7 @@ const map = shallowRef<null | YMap>(null)
       <yandex-map-controls :settings="{ position: 'right' }">
         <yandex-map-zoom-control />
       </yandex-map-controls>
-      <yandex-map-default-marker :settings="{ coordinates:  [59.939545, 57.895990] as LngLat, title: 'Арт-студия «Катя Рауш»' }" />
+      <yandex-map-default-marker :settings="{ coordinates:  [59.958574, 57.867171] as LngLat, title: 'Арт-студия «Катя Рауш»' }" />
     </yandex-map>
   </div>
 </div>
